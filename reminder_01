@@ -1,0 +1,12 @@
+from tkinter import *
+from tkinter import messagebox as mb
+from tkinter import simpledialog as sd
+from tkinter import ttk
+
+#Создаем окно программы
+window=Tk()
+window.title("Напоминание")
+lable= ttk.Label (text="Установите напоминание")
+lable.pack(pady=10)
+button= Button(text="Установить напоминание", command=set, font=("Arial", 14))
+button.pack()
